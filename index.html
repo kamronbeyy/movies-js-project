@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Slider css link -->
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+     <!-- =============== -->
+      <!-- FontAwsoom link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=rcjWpH0fADoBaH2e2AqwH4MI3_X17yv1x4iNsIP7Lqg6I1DwM6Df14hmez5pwnyRlbWDQAWvLUxmnBrVIIdhkg" charset="UTF-8"></script>
+    <!-- ============== -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+
+  <header id="home" class="header">
+    <nav class="nav">
+      <div class="container">
+          <div class="brand-name">
+             <a href="#" class="nav-brand-link">
+                  <img src="./img/movies-title.png" width="200px" height="60px" alt="" class="movie-img">
+             </a>
+          </div>
+
+          <div class="navigation">
+
+              <input type="checkbox" class="toggle-menu">
+              <div class="hamburger"></div>
+
+              <ul class="menu">
+                  <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                   <li class="menu-item"><a href="#trailer" class="menu-link">Trailer</a></li>
+                  <li class="menu-item"><a href="#latest" class="menu-link">Latest Release</a></li>
+                  <li class="menu-item"><a href="#popular" class="menu-link">Popular Movies</a></li>
+                  <li class="menu-item"><a href="#contact" class="menu-link">Contacts</a></li>
+                  <li class="menu-item">
+                      <a href="#modal" class="menu-link">Buy Tickets</a>
+                      <div id="modal">
+                          <div class="modal-content">
+                              <img  class='img-mdl' src="./img/ticket-movie.png" alt="image" width="466px" height="394px" class="modal-img">
+                              <div class="input-box">
+                                  <form class="form">
+                                      <input class="input-names" type="text" placeholder="Full Name" required>
+                                      <input class="input-number" type="phone" placeholder="Phone" required>
+                                      <input type="text" class="input-movie" placeholder="Movie Name" required>
+                                      <input type="number" class="input-ticket" placeholder="Ticket" required>
+                                      <button class="modal-btn" type="submit">Buy Ticket</button>
+                                  </form>
+                              </div>
+                              <a href="#" class="close-modal">&times;</a>
+                          </div>
+                      </div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+</header>
+  <main class="main">
+      <section class="slider section">
+          <div id="preloader"></div>
+        <div class="container">
+            <div class="content">
+                <h2 class="slider-title"> <span class="title-span">Movies</span> of the Week
+                </h2>
+                 <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <ul class="slider-list">
+                        <li class="slider-item" >
+                          <div class="img-box">
+                            <img class="slider-img" src="https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg" alt="">
+                          </div>
+                          <div class="download">
+                             <a href="#" class="download-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                             </a>
+                          </div>
+                        </li>
+                        <li class="slider-item" >
+                           <div class="img-box">
+                            <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/svIDTNUoajS8dLEo7EosxvyAsgJ.jpg" alt="">
+                           </div>
+                           <div class="download">
+                            <a href="#" class="download-link">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                            </a>
+                         </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/fw02ONlDhrYjTSZV8XO6hhU3ds3.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul class="slider-list">
+                        <li class="slider-item" >
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/vVPrWngVJ2cfYAncBedQty69Dlf.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item" >
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/uTVGku4LibMGyKgQvjBtv3OYfAX.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/xRWht48C2V8XNfzvPehyClOvDni.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide" >
+                    <ul class="slider-list">
+                        <li class="slider-item" >
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/tvCtAz8z5tF49a7q9RRHvxiTjzv.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item" >
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/wzLde7keWQqWA0CJYVz0X5RVKjd.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/x5MSMGVagNINIWyZaxdjLarTDM3.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                        <li class="slider-item">
+                            <div class="img-box">
+                                <img  class="slider-img" src="https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" alt="">
+                            </div>
+                            <div class="download">
+                                <a href="#" class="download-link">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="m12 16 4-5h-3V4h-2v7H8z"></path><path d="M20 18H4v-7H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-2v7z"></path></svg>
+                                </a>
+                             </div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            </div>
+        </div>
+      </section>
+      <section id="trailer" class="trailer section">
+        <div class="container">
+            <div class="content">
+                <h2 class="trailer-title">Trailer</h2>
+                <div class="trailer-box">
+                    <div class="trailer-info">
+                        <h3 class="trailer-info-title">Venom 2</h3>
+                        <p class="trailer-info-text">
+                            On 10th May 2021, a first full-length 
+                            trailer was <br> released – and it wasn’t
+                            short on  action, suggesting <br> the same
+                            blend of humour and horror that <br>  made
+                            the first film a hit with fans while <br> 
+                            giving a first look at characters played <br> 
+                            by Naomie Harris and Stephen Graham.
+                        </p>
+                        <time class="trailer-info-data">
+                            Release Date: 15 September 2021
+                        </time>
+                    </div>
+                    <div class="iframes">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-LkHS8geUjQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section id="latest" class="slider3 section">
+        <div class="container">
+            <div class="content">
+              <div class="content-big-box">
+                   <div class="form-box">
+                    <div class="select-box">
+                        <select id="select"></select>
+                        <select id="selects">
+                            <option value="a__z">A__Z</option>
+                            <option value="z__a">Z__A</option>
+                        </select>
+                    </div>
+                    <form id="form">
+                        <input type="text" id="input-search">
+                        <button id="btn-search" type="submit">Search</button>
+                    </form>
+                   </div>
+                    <ul id="list" class="list-wrapper"></ul>
+                    <div id="pagination-container"></div>
+              </div>
+              <div class="last-version">
+                  <h3 class="last-version-title">Latest Release</h3>
+                  <ul class="last-list">
+                      <li class="last-item">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                         <div class="last-img-box">
+                             <img src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="img" width="250px" height="350px" class="last-img">
+                         </div>
+                         <div class="last-info-box">
+                             <h3 class="last-title">Avengers: Infinity War</h3>
+                             <a href="#" class="last-link">Download Now</a>
+                         </div>
+                      </li>
+                      <li class="last-item">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="last-img-box">
+                            <img src="https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg" alt="img" width="250px" height="350px" class="last-img">
+                        </div>
+                        <div class="last-info-box">
+                            <h3 class="last-title">Aquaman</h3>
+                            <a href="#" class="last-link">Download Now</a>
+                        </div>
+                     </li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section id="popular" class="slider4 section">
+        <div class="container">
+            <div class="content">
+                <div class="popular-box">
+                    <h3 class="popular-title1">Popular Movies</h3>
+                    <hr class="hr">
+                    <ul class="popular-list">
+                        <li class="popular-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                           <div class="popular-img-box">
+                               <img src="https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                           </div>
+                           <div class="popular-info-box">
+                              <div class="svg-big-box">
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                              </div>
+                               <h3 class="popular-title">Harry Potter and the Philosopher's Stone</h3>
+                               <a href="#" class="popular-link">Watch movies</a>
+                           </div>
+                        </li>
+                        <li class="popular-item">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <div class="popular-img-box">
+                              <img src="https://image.tmdb.org/t/p/w500/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                          </div>
+                          <div class="popular-info-box">
+                            <div class="svg-big-box">
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                              </div>
+                              <h3 class="popular-title">The Avengers</h3>
+                              <a href="#" class="popular-link">Watch movies</a>
+                          </div>
+                       </li>
+                       <li class="popular-item">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                          <div class="popular-img-box">
+                              <img src="https://image.tmdb.org/t/p/w500/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                          </div>
+                          <div class="popular-info-box">
+                            <div class="svg-big-box">
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                                <div class="svg-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                                </div>
+                              </div>
+                              <h3 class="popular-title">Thor: Ragnarok</h3>
+                              <a href="#" class="popular-link">Watch moives</a>
+                          </div>
+                       </li>
+                       <li class="popular-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <div class="popular-img-box">
+                           <img src="https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                        </div>
+                        <div class="popular-info-box">
+                        <div class="svg-big-box">
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                          </div>
+                           <h3 class="popular-title">Avengers: Infinity War</h3>
+                           <a href="#" class="popular-link">Watch movies</a>
+                        </div>
+                        </li>
+                        <li class="popular-item">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <div class="popular-img-box">
+                          <img src="https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                        </div>
+                        <div class="popular-info-box">
+                        <div class="svg-big-box">
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                          </div>
+                          <h3 class="popular-title">Aquaman</h3>
+                          <a href="#" class="popular-link">Watch movies</a>
+                        </div>
+                        </li>
+                        <li class="popular-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <div class="popular-img-box">
+                          <img src="https://image.tmdb.org/t/p/w500/r7vmZjiyZw9rpJMQJdXpjgiCOk9.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                        </div>
+                        <div class="popular-info-box">
+                            <div class="svg-big-box">
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            </div>
+                            <h3 class="popular-title">Guardians of the Galaxy</h3>
+                            <a href="#" class="popular-link">Watch moives</a>
+                        </div>
+                        </li>
+                        <li class="popular-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="popular-img-box">
+                            <img src="https://image.tmdb.org/t/p/w500/6VxEvOF7QDovsG6ro9OVyjH07LF.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                            </div>
+                            <div class="popular-info-box">
+                            <div class="svg-big-box">
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            <div class="svg-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                            </div>
+                            </div>
+                            <h3 class="popular-title">Master Z: Ip Man Legacy</h3>
+                            <a href="#" class="popular-link">Watch movies</a>
+                            </div>
+                        </li>
+                        <li class="popular-item">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <div class="popular-img-box">
+                                <img src="https://image.tmdb.org/t/p/w500/kBuvLX6zynQP0sjyqbXV4jNaZ4E.jpg" alt="img" width="250px" height="350px" class="popular-img">
+                            </div>
+                            <div class="popular-info-box">
+                            <div class="svg-big-box">
+                          <div class="svg-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          </div>
+                          <div class="svg-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          </div>
+                          <div class="svg-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          </div>
+                          <div class="svg-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          </div>
+                          <div class="svg-box">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgb(216, 215, 215);transform: msFilter"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+                          </div>
+                            </div>
+                            <h3 class="popular-title">The Kid Who Would Be King</h3>
+                            <a href="#" class="popular-link">Watch movies</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </section>
+      <footer class="footer section" id="contact">
+        <div class="container">
+            <h2 class="footer-title">Contacts</h2>
+            <p class="footer-text">Want to know more or juct chat? <br> You are welcome!</p>
+            <a href="tel: +998950023752" class="footer-link">Make to call</a>
+            <div class="typed">
+                <h3 class="typed-title">For communication : <span class="anime"></span></h3>
+            </div>
+            <!--  Social media coding -->
+            <div class="wrapper">
+                <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <a href="https://instagram.com/_fullstack_dev_0117"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="icon github">
+                    <div class="tooltip">GitHub</div>
+                    <a href="https://github.com/kamronbey"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="icon whatsapp">
+                    <div class="tooltip">WhatsApp</div>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- Social media coding and -->
+        </div>
+    </footer>
+    <div id="modals">
+        <div id="content-modal" class="content-modal">
+           <div class="modal-box">
+               <div class="modal-image-box">
+                   <img src="https://picsum.photos/330/415" alt="" class="modal-imgs">
+               </div>
+               <div class="modal-info-boxs">
+                   <h2 class="modal-titles">Movies</h2>
+                   <p class="modal-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est ullam, ut mollitia fugit optio consequatur totam. Repudiandae earum voluptatibus rem similique doloremque ipsum sit, quisquam repellat delectus. Inventore, recusandae.</p>
+                   <p class="modal-genres">Lorem ipsum dolor sit amet.</p>
+                   <p class="modal-time">223433434</p>
+               </div>
+           </div>
+            <button id="modal-close">&times;</button>
+        </div>
+    </div>
+
+</main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="./typed.js"></script>
+    <script src="./films.js"></script>
+    <script src="./app.js  "></script>
+    <script>
+         let items = $('.list-wrapper .list-item');
+        let numItems = items.length;
+        let perPage = 8;
+
+        items.slice(perPage).hide();
+
+        $('#pagination-container').pagination({
+            items: numItems,
+            itemsOnPage: perPage,
+            prevText: "<",
+            nextText: ">",
+            onPageClick: function (pageNumber){
+                let showFrom = perPage * (pageNumber -1);
+                let showTo = showFrom + perPage;
+                items.hide().slice(showFrom, showTo).show();
+            }
+        })
+    </script>
+</body>
+</html>
